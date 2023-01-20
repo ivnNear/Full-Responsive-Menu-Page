@@ -1,0 +1,173 @@
+:root{
+    --main: #F39D42;
+}
+
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282522;
+    
+}
+
+
+
+.logo a {
+    font-size: 1.5rem;
+    
+    color: var(--main);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.burger{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger div{
+    background-color: #fff;
+    height: 5px;
+    border-radius: 5px;
+
+}
+header nav a {
+    font-size: 1.8rem;
+    color: var(--main);
+    margin-left: 3rem;
+}
+header{
+    background-color: #1C1919;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+    align-items: center;
+    
+
+}
+
+aside{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: none;
+}
+#side:target{
+    display: block;
+}
+
+aside header{
+    
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    padding: 1rem 2rem;
+    align-items: center;
+}
+aside nav {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+aside a{
+    font-size: 3rem;
+    color: var(--main);
+    
+    
+    
+    
+    
+}
+h1{
+    color: var(--main);
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.image{
+    padding: 0;
+    
+}
+article{
+    
+    border-radius: 1rem;
+    background-color: #E4C8AD;
+    overflow: hidden;
+    text-align: center;
+    font-size: 2em;
+    
+    
+    
+}
+article div{
+    padding: 1rem;
+}
+h2{
+    margin-bottom: 1rem;
+    color: #282522;
+    font-size: 2rem;
+    
+}
+button{
+    padding: 0.5rem 2rem;
+    background-color: var(--main);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+button:hover{
+    background-color: #f08615;
+}
+
+@media(max-width: 48rem){
+    
+    section{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    header nav{
+        display: none;
+    }
+    .burger{
+        display: flex;
+    }
+    
+    
+}
